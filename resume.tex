@@ -11,11 +11,13 @@
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font 
 
+\usepackage[normalem]{ulem}
+
 %\addtolength{\textheight}{0.2in} % use this if pdflatex outputs two pages with the first page blank
 
 \begin{document} 
-\begin{minipage}{\textwidth}
- 
+%\begin{minipage}{\textwidth}
+
 \name{\hfil Jordan R. Horwich \hfil \\ \hfil Jordan@JordanHorwich.com \hfil \\ \hfil (207) 632-0713 \hfil \\ } % the \\[12pt] adds a blank line after name
  
 \address{{\bf Present Address} \\ 2166 14th St \\ 2nd Floor \\ Troy, NY 12180 }
@@ -23,39 +25,38 @@
 \begin{resume} 
  
 \section{Objective} 
-A Co-op or summer position as a software engineer where I will be able to expand my skill set and make valuable contributions. %and learn from my experience.
+A Co-op or summer internship as a software engineer where I will be able to expand my skill set and make valuable contributions. %and learn from my experience.
 
 \section{Education} 
-{\bf Rensselaer Polytechnic Institute}, Troy, NY \\
+{\bf Rensselaer Polytechnic Institute}, Troy, NY \hfill Graduating May, 2016 \\
 B.S., Computer Science, Minor in Physics \\
-Expected Date of Graduation: May, 2016 \\
 GPA: 3.76
  
 
 \section{Professional Experience}
-{\bf Software Engineer,} Bloomberg L.P., New York, NY \hfill Summer 2014
+{\bf Software Engineer,} \uline{Bloomberg L.P.}, New York, NY \hfill Summer 2014
  \begin{itemize} \itemsep -2pt
- \item Worked on a large team to develop a relational database to store metadata and metadata history for large amounts of financial data.
- \item Developed an API and service in C++ to expose useful data from this database.
- \item Independently designed and developed a UI, which utilized this service, for our internal business teams. \\
+ \item Developed an analytic tool to help the business teams better understand how external market data is provided to clients by leveraging field overload definitions.
+ \item Developed an API using the Bloomberg Application Service framework to expose metadata of overloaded field mappings from a relational database.
+ \item Independently designed and developed a GUI that utilizes this API and is the front end for the business teams.
  \end{itemize}
 
 
 
-{\bf Software Engineer \& \\ Physics Consultant,} Mimir Physics, Westbrook, ME \hfill Summers 2012-13
+{\bf Software Engineer \& \\ Physics Consultant,} \uline{Mimir Physics}, Westbrook, ME \hfill Summers 2012-13
  \begin{itemize} \itemsep -2pt  % reduce space between items
- \item Worked on a team of two to develop an efficient image processor in C and C++ for high resolution and high color bit depth images. %that analyzed color data to create color images with a color error of $\Delta E^* < 1$.
- \item Created an application and user interface in Visual Basic which interfaced with custom camera hardware to create color images with a color error of $\Delta E^* < 1$. %visually analyze the color using the image processor we developed.
+ \item Co-author of a (pending) patent for a hardware and software solution to account for variations in the spectra of multiple light sources in imaging applications.
+ \item Worked on a team of two to develop an efficient image color processor for high color bit depth images that analyzed color data to create color images with an absolute color error of $\Delta E^* < 1$.
  \item Designed and prototyped custom hardware with an FTDI USB interface  and developed software to interface with it.
- \item My contributions were directly responsible for the success of the project. The processing speed was increased by 740\% and was finished ahead of schedule. \\
+ \item My contributions increased the processing speed by a factor of nearly 100.
  \end{itemize}
 
  
  
-{\bf Software Engineer,} Fairchild Semiconductor, South Portland, ME \hfill  Summer 2011
+{\bf Software Engineer,} \uline{Fairchild Semiconductor}, South Portland, ME \hfill  Summer 2011
 \begin{itemize} \itemsep -2pt %reduce space between items
- \item Reduced time and money spent on repetitive quality assurance tasks by developing programs in Perl and Bash to automate these tasks.
- \item Consolidated the work of collecting the results of quality assurance analyses from the many company locations around the world by creating a utility that utilized SSH tunnels to collect the results.
+ \item Developed tools to automate quality assurance analyses, collate the data, and then distribute the results across the company's internal network.
+ \item Provided a UI for the tools that was written in Perl using the Tk framework.
 \end{itemize}
 
 \section{Other \\ Projects}
@@ -64,28 +65,23 @@ GPA: 3.76
 		A unique computer vision approach to automatic traffic sign recognition.
 \end{description}
 
-% Tabulate Computer Skills; p{3in} defines paragraph 3 inches wide
 \section{Computer \\ Skills}
-\begin{tabular}{l l r}%{l p{4in}}
+\begin{tabular}{l l r}
     %{\bf Languages:} & C++, Python, Visual Basic, Bash, C\#, Java, C, Perl, HTML, PHP \\ \\
 		{\bf Languages:} & C++ & 5 years experience \\
 		                 & Bash, C, Python, SQL & $<$ 4 years experience \\
 \end{tabular} \\
-\\
+\bgroup
+\def\arraystretch{1.5}
 \begin{tabular}{l p{4in}}
-		{\bf Software:} & Extensive knowledge of color spaces, Git, Mathematica, Maple, {\nobreak Linux, OS X, Windows} \\
+		{\bf Software:} & Git, Linux, Maple, Mathematica, OS X, Windows \\
+		{\bf Skills:} & Extensive knowledge of color spaces and bitmap images \\
  \end{tabular}
-
-%\section{Leadership Activities} 
-% {\bf Team Captain,} Greely VEX Robotics Team \hfill 2010-12
-% \begin{itemize} \itemsep -2pt
-% \item Led the team to place 12th overall internationally in the autonomous competition.
-% \item Recruited new members and grew the size of the team by 50\%.
-% \end{itemize}
+\egroup
 
  \section{Honors \& \\ Achievements} 
 \begin{description} \itemsep -11pt
-		\item[Patent Co-author (pending)] of a hardware and software solution to account for variations in the spectra of multiple light sources in imaging applications. \\
+		%\item[Patent Co-author] (pending) for a hardware and software solution to account for variations in the spectra of multiple light sources in imaging applications. \\
 		\item[Microsoft Coding Competition] - Tied for first place (October 2013). \\
 		\item[Dean's List] - All semesters. \\
 		\item[Rensselaer Leadership Award]
@@ -95,5 +91,5 @@ GPA: 3.76
 %RPI Mountain Bike Race Team, Skiing, Astrophysics
 
 \end{resume} 
-\end{minipage}
+%\end{minipage}
 \end{document} 
