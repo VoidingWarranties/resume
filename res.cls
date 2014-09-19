@@ -773,9 +773,9 @@
 
 \@secpenalty = -500
 \topmargin 0pt
-\headheight -0.25in
+\headheight -0.55in
 \headsep 0pt
-\textheight 9.5in
+\textheight 10in
 \parindent 0pt
 \topmargin 0in
 \oddsidemargin -0.25in
