@@ -15,21 +15,21 @@
 
 \usepackage{hyperref}
 
-%\addtolength{\textheight}{0.2in} % use this if pdflatex outputs two pages with the first page blank
+\addtolength{\textheight}{0.2in} % use this if pdflatex outputs two pages with the first page blank
 
 \begin{document} 
 \begin{minipage}{\textwidth}
 
 \name{\hfil Jordan R. Horwich \hfil \\ \hfil \uline{\href{http://GitHub.com/VoidingWarranties}{GitHub.com/VoidingWarranties}} \hfil \\ \hfil Jordan@JordanHorwich.com \hfil \\ \hfil (207) 632-0713 \hfil \\ } % the \\[12pt] adds a blank line after name
  
-\address{{\bf Present Address} \\ 2166 14th St \\ 2nd Floor \\ Troy, NY 12180 }
-\address{{\bf Permanent Address} \\ 4 Oak Street \\ Cumberland, ME 04021 }
+%\address{{\bf Present Address} \\ 320 Crescent Village Circle \\ Apt 1193 \\ San Jose, CA 95134 }
+%\address{{\bf Permanent Address} \\ 4 Oak Street \\ Cumberland, ME 04021 }
 \begin{resume} 
  
 \section{Education} 
-{\bf Rensselaer Polytechnic Institute}, Troy, NY \hfill Graduating May, 2016 \\
+{\bf Rensselaer Polytechnic Institute}, Troy, NY \hfill Graduating December, 2016 \\
 B.S., Computer Science, Minor in Physics \\
-GPA: 3.76
+GPA: 3.77
  
 \section{Courses}
 \begin{tabular}{lll}
@@ -38,7 +38,24 @@ $\bullet$ Computer Organization \& Design & $\bullet$ Algorithms & $\bullet$ Dat
 \end{tabular}
 
 \section{Professional Experience}
-{\bf Software Engineering Intern,} \uline{Bloomberg L.P.} \hfill Summer 2014 -- Present
+{\bf Software Engineer Intern,} \uline{LinkedIn} \hfill Summer 2015
+ \begin{itemize} \itemsep -2pt % reduce space between items
+ \item Implemented miniprofiles for LinkedIn's homepage using the Play Framework in Scala and Dust.js.
+ \end{itemize}
+
+
+
+{\bf Software Engineer Intern,} \uline{Intentional Software} \hfill Spring 2015
+ \begin{itemize} \itemsep -2pt % reduce space between items
+ \item Designed and developed a natural user interface using the Microsoft Kinect to implement a gesture and virtual touch screen interface.
+ \item Wrote a hand pose classifier in C++ using feature matching in OpenCV.
+ \item Developed an N-dimensional implementation of UW's \$1 Recognizer for atomic gesture recognition with the Kinect. % TODO: add link to UW's $1 Recognizer
+ \item Architected a data transformation pipeline to process input from motion sensing devices such as the Kinect, Leap Motion, and Myo.
+ \end{itemize}
+
+
+
+{\bf Software Engineer Intern,} \uline{Bloomberg L.P.} \hfill Summer 2014
  \begin{itemize} \itemsep -2pt
  \item Developed an analytic tool using C++ and service-oriented architecture on the back end to expose data from an SQLite database.
  \item Designed and developed the tool's front end application as a Bloomberg Terminal function in javascript to allow the user to view and modify data in the database.
@@ -55,30 +72,20 @@ $\bullet$ Computer Organization \& Design & $\bullet$ Algorithms & $\bullet$ Dat
  \item Increased the processing speed by a factor of nearly 100.
  \end{itemize}
 
- 
- 
-{\bf Software Engineering Intern,} \uline{Fairchild Semiconductor} \hfill  Summer 2011
-\begin{itemize} \itemsep -2pt %reduce space between items
- \item Developed tools to automate quality assurance analyses, collate the data, and then distribute the results across the company's internal network.
- \item Provided a UI for the tools that was written in Perl using the Tk framework.
-\end{itemize}
-
 \section{Other \\ Projects}
 \begin{description}
+	\item[MyoIntelligesture] -- \uline{\href{http://GitHub.com/VoidingWarranties/Myo-Intelligesture}{GitHub.com/VoidingWarranties/Myo-Intelligesture}} \\
+		A library for processing raw data from the Thalmic Myo using a non-linear data pipeline.
+	\item[MyoHome] -- \uline{\href{http://GitHub.com/VoidingWarranties/Myo-Home}{GitHub.com/VoidingWarranties/Myo-Home}} \\
+		A natural user interface for home automation using the Thalmic Myo. Allows you to control home appliances by pointing at them and gesturing. Heavily uses MyoIntelligesture.
 	\item[SignSight] -- \uline{\href{http://GitHub.com/VoidingWarranties/SignSight}{GitHub.com/VoidingWarranties/SignSight}} \\
 		A unique computer vision approach to automatic traffic sign recognition.
-	\item[TrippingWookie] -- \uline{\href{http://GitHub.com/VoidingWarranties/TrippingWookie}{GitHub.com/VoidingWarranties/TrippingWookie}} \\
-		A computer vision focused gesture control library. Play 2048 by waving your hands! Developed at HackRU in the spring of 2014.
-	\item[FoodMate] -- \uline{\href{http://GitHub.com/VoidingWarranties/FoodMate}{GitHub.com/VoidingWarranties/FoodMate}} \\
-		An iOS app for tracking kitchen inventory and splitting grocery bills dynamically based on inventory. Developed at PennApps in the fall of 2014.
-	\item[Monte Carlo Scrabble] \hfil \\
-		A real time agent implementing a Monte Carlo method and a hidden Markov model for a variation on scrabble.
 \end{description}
 
 \section{Computer \\ Skills}
 \begin{tabular}{l l r}
-		{\bf Languages:} & C++, Python, Bash & 6 years experience \\
-		                 & C, SQL, Swift & $<$ 3 years experience \\
+		{\bf Languages:} & C++, Python, Bash & 7 years experience \\
+		                 & C, Javascript, SQL, Swift, Scala & $<$ 3 years experience \\
 \end{tabular} \\
 \bgroup
 \def\arraystretch{1.23} %adjust this number to adjust the spacing of the below table. Make sure to not make it so big that the resume overflows to 2 pages.
@@ -89,9 +96,9 @@ $\bullet$ Computer Organization \& Design & $\bullet$ Algorithms & $\bullet$ Dat
 
  \section{Honors \& \\ Achievements} 
 \begin{description} \itemsep -11pt
-		\item[HackRU] - Organizer's Choice Award (Spring 2014). \\
+		\item[YHack] - Best Use of Intel Galileo for \uline{\href{http://GitHub.com/VoidingWarranties/Myo-Home}{MyoHome}} (Fall 2014). \\
+		\item[HackRU] - Organizer's Choice Award for \uline{\href{http://GitHub.com/VoidingWarranties/TrippingWookie}{TrippingWookie}} (Spring 2014). \\
 		\item[Microsoft Coding Competition] - Tied for first place (October 2013). \\
-		\item[Dean's List] - All semesters. \\
 		\item[Rensselaer Leadership Award]
 \end{description}
 
