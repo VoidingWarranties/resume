@@ -6,6 +6,8 @@
 \documentclass[margin]{res}
 % the margin option causes section titles to appear to the left of body text
 \textwidth=5.7in
+% adjust the top margin to better vertically center the page
+\headheight= -0.65in
 \pdfpagewidth=\paperwidth
 \pdfpageheight=\paperheight
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
@@ -27,9 +29,9 @@
 \begin{resume}
 
 \section{Education}
-{\bf Rensselaer Polytechnic Institute}, Troy, NY \hfill Graduating December, 2016 \\
-B.S., Computer Science, Minor in Physics \\
-GPA: 3.77
+{\bf Rensselaer Polytechnic Institute}, Troy, NY \hfill 2012 -- 2015 \\
+81\% of major requirements completed towards B.S., Computer Science \\
+GPA: 3.72
 
 \section{Courses}
 \begin{tabular}{lll}
@@ -38,6 +40,16 @@ $\bullet$ Computer Graphics & $\bullet$ Natural Language Processing & $\bullet$ 
 \end{tabular}
 
 \section{Professional Experience}
+{\bf Software Engineer \& First Employee,} \uline{Nebulous Inc.} \hfill December 2015 -- Present
+ \begin{itemize} \itemsep -2pt % reduce space between items
+ \item Developed, marketed, and pitched Sia, a blockchain-based decentralized storage network written in Go. Our team of 3 has raised \$1.2 mil to date and recently launched v1.
+ \item Improved Sia's initial blockchain download by a factor of 25,000.
+ \item Secured the gateway that maintains Sia's decentralized peer-to-peer network to prevent against eclipse attacks.
+ \item Finalized Sia's REST-like API in preparation for launching out of beta.
+ \end{itemize}
+
+
+
 {\bf Software Engineer Intern,} \uline{LinkedIn} \hfill Summer 2015
  \begin{itemize} \itemsep -2pt % reduce space between items
  \item Implemented company and school mini-profiles UI for LinkedIn's homepage using the Play Framework in Scala and Dust.js.
@@ -58,18 +70,16 @@ $\bullet$ Computer Graphics & $\bullet$ Natural Language Processing & $\bullet$ 
 
 {\bf Software Engineer Intern,} \uline{Bloomberg L.P.} \hfill Summer 2014
  \begin{itemize} \itemsep -2pt
- \item Developed an analytic tool using C++ and service-oriented architecture on the back end to expose data from an SQLite database.
- \item Designed and developed the tool's front end application as a Bloomberg Terminal function in javascript to allow the user to view and modify data in the database.
+ \item Designed and developed a Bloomberg Terminal application using C++ and service-oriented architecture on the back end and javascript on the front end.
  \item My tool was used to quickly fix a fatal error in the way market data from exchanges were stored. Similar errors previously took many hours to fix without my tool.
  \end{itemize}
 
 
 
-{\bf Software Engineer \& \\ Physics Consultant,} \uline{Mimir Physics} \hfill Summer 2012 -- 2013
+{\bf Software Engineer \& Physics Consultant,} \uline{Mimir Physics} \hfill Summer 2012 -- 2013
  \begin{itemize} \itemsep -2pt  % reduce space between items
  \item Co-author of a patent (pending application) for a hardware and software solution to account for variations in the spectra of multiple light sources in imaging applications.
  \item Developed an image processor in C++ for high color bit depth images that analyzed color data to create color images with an absolute color error of $\Delta E^* < 1$.
- \item Designed and prototyped custom hardware with an FTDI USB interface  and developed software to interface with it.
  \item Increased the processing speed by a factor of nearly 100.
  \end{itemize}
 
@@ -85,8 +95,8 @@ $\bullet$ Computer Graphics & $\bullet$ Natural Language Processing & $\bullet$ 
 
 \section{Computer \\ Skills}
 \begin{tabular}{l l r}
-		{\bf Languages:} & C++, Python, Bash & 7 years experience \\
-		                 & C, Javascript, SQL, Swift, Scala & $<$ 3 years experience \\
+		{\bf Languages:} & C++, Python, Bash & 8 years experience \\
+		                 & Go, C, Javascript, SQL, Swift, Scala & $<$ 3 years experience \\
 \end{tabular} \\
 \bgroup
 \def\arraystretch{1.23} %adjust this number to adjust the spacing of the below table. Make sure to not make it so big that the resume overflows to 2 pages.
