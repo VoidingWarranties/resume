@@ -17,32 +17,28 @@
 
 \usepackage{hyperref}
 
-\addtolength{\textheight}{0.2in} % use this if pdflatex outputs two pages with the first page blank
+%\addtolength{\textheight}{0.2in} % use this if pdflatex outputs two pages with the first page blank
 
 \begin{document}
 \begin{minipage}{\textwidth}
 
 \name{\hfil Jordan R. Horwich \hfil \\ \hfil \uline{\href{http://GitHub.com/VoidingWarranties}{GitHub.com/VoidingWarranties}} \hfil \\ \hfil Jordan@JordanHorwich.com \hfil \\ \hfil (207) 632-0713 \hfil \\ } % the \\[12pt] adds a blank line after name
 
-%\address{{\bf Present Address} \\ 320 Crescent Village Circle \\ Apt 1193 \\ San Jose, CA 95134 }
-%\address{{\bf Permanent Address} \\ 4 Oak Street \\ Cumberland, ME 04021 }
 \begin{resume}
 
-\section{Education}
-{\bf Rensselaer Polytechnic Institute}, Troy, NY \hfill 2012 -- 2015 \\
-81\% of major requirements completed towards B.S., Computer Science \\
-GPA: 3.72
-
-\section{Courses}
-\begin{tabular}{lll}
-$\bullet$ Machine Learning & $\bullet$ Human-Computer Interaction Usability & $\bullet$ Algorithms \\
-$\bullet$ Computer Graphics & $\bullet$ Natural Language Processing & $\bullet$ Data Structures \\
-\end{tabular}
-
 \section{Professional Experience}
-{\bf Software Engineer \& First Employee,} \uline{Nebulous Inc.} \hfill December 2015 -- Present
+{\bf Software Engineer,} \uline{Google} \hfill January 2017 -- Present
  \begin{itemize} \itemsep -2pt % reduce space between items
- \item Developed, marketed, and pitched Sia, a blockchain-based decentralized storage network written in Go. Our team of 3 has raised \$1.2 mil to date and recently launched v1.
+ \item Currently working on \uline{\href{https://blog.google/products/search/introducing-knowledge-graph-things-not/}{Google Knowledge Graph}}, a part of Google Search.
+ \item Developed horizontal tooling and infrastructure widely used throughout Search teams for ingestion and maintenance of data in the Knowledge Graph.
+ \item Designed a UI and algorithm for performing arbitrary topological transformations on unsanitized structured data for the purpose of schema mapping.
+ \end{itemize}
+
+
+
+{\bf Software Engineer \& First Employee,} \uline{Nebulous Inc.} \hfill December 2015 -- December 2016
+ \begin{itemize} \itemsep -2pt % reduce space between items
+ \item Developed, marketed, and pitched Sia, a blockchain-based decentralized storage network written in Go.
  \item Improved Sia's initial blockchain download by a factor of 25,000.
  \item Secured the gateway that maintains Sia's decentralized peer-to-peer network to prevent against eclipse attacks.
  \item Finalized Sia's REST-like API in preparation for launching out of beta.
@@ -70,8 +66,7 @@ $\bullet$ Computer Graphics & $\bullet$ Natural Language Processing & $\bullet$ 
 
 {\bf Software Engineer Intern,} \uline{Bloomberg L.P.} \hfill Summer 2014
  \begin{itemize} \itemsep -2pt
- \item Designed and developed a Bloomberg Terminal application using C++ and service-oriented architecture on the back end and javascript on the front end.
- \item My tool was used to quickly fix a fatal error in the way market data from exchanges were stored. Similar errors previously took many hours to fix without my tool.
+ \item Designed and developed a Bloomberg Terminal application using C++ and service-oriented architecture on the back end and javascript on the front end. This tool was used to quickly fix a fatal error in the way market data from exchanges were stored. Similar errors previously took many hours to fix without my tool.
  \end{itemize}
 
 
@@ -83,8 +78,23 @@ $\bullet$ Computer Graphics & $\bullet$ Natural Language Processing & $\bullet$ 
  \item Increased the processing speed by a factor of nearly 100.
  \end{itemize}
 
+\section{Skills}
+\begin{tabular}{l l r}
+		{\bf Languages:} & Go, C++, C & $>$ 5 years experience \\
+		                 & Angular, Typescript, Python & 4 years experience \\
+		                 & SQL, Swift, Scala & $<$ 3 years experience \\
+\end{tabular} \\
+\bgroup
+\def\arraystretch{1.23} %adjust this number to adjust the spacing of the below table. Make sure to not make it so big that the resume overflows to 2 pages.
+\begin{tabular}{l p{4in}}
+		{\bf Software:} & Mercurial, Git, MacOS, Linux \\
+ \end{tabular}
+\egroup
+
 \section{Other \\ Projects}
 \begin{description}
+	\item[Offsite APFS Backup] -- \uline{\href{https://GitHub.com/VoidingWarranties/offsite-apfs-backup}{GitHub.com/VoidingWarranties/Offsite-APFS-Backup}} \\
+		A non-destructive incremental backup utility for cloning APFS snapshots.
 	\item[MyoIntelligesture] -- \uline{\href{http://GitHub.com/VoidingWarranties/Myo-Intelligesture}{GitHub.com/VoidingWarranties/Myo-Intelligesture}} \\
 		A library for processing raw data from the Thalmic Myo using a non-linear data pipeline.
 	\item[MyoHome] -- \uline{\href{http://GitHub.com/VoidingWarranties/Myo-Home}{GitHub.com/VoidingWarranties/Myo-Home}} \\
@@ -93,17 +103,24 @@ $\bullet$ Computer Graphics & $\bullet$ Natural Language Processing & $\bullet$ 
 		A unique computer vision approach to automatic traffic sign recognition.
 \end{description}
 
-\section{Computer \\ Skills}
-\begin{tabular}{l l r}
-		{\bf Languages:} & C++, Python, Bash & 8 years experience \\
-		                 & Go, C, Javascript, SQL, Swift, Scala & $<$ 3 years experience \\
-\end{tabular} \\
-\bgroup
-\def\arraystretch{1.23} %adjust this number to adjust the spacing of the below table. Make sure to not make it so big that the resume overflows to 2 pages.
-\begin{tabular}{l p{4in}}
-		{\bf Software:} & Git, Linux, Maple, Mathematica, OS X, Windows \\
- \end{tabular}
-\egroup
+\end{resume}
+\end{minipage}
+
+\vfill \hfill (Continued on next page...)
+
+\begin{minipage}{\textwidth}
+\begin{resume}
+
+\section{Education}
+{\bf Rensselaer Polytechnic Institute}, Troy, NY \hfill 2012 -- 2015 \\
+81\% of major requirements completed towards B.S., Computer Science \\
+GPA: 3.72
+
+\section{Courses}
+\begin{tabular}{lll}
+$\bullet$ Machine Learning & $\bullet$ Human-Computer Interaction Usability & $\bullet$ Algorithms \\
+$\bullet$ Computer Graphics & $\bullet$ Natural Language Processing & $\bullet$ Data Structures \\
+\end{tabular}
 
  \section{Honors \& \\ Achievements}
 \begin{description} \itemsep -11pt
